@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'capstone_back_end.apps.CapstoneBackEndConfig'
+    'portfolio_back.apps.PortfolioBackConfig'
 ]
 
 MIDDLEWARE = [

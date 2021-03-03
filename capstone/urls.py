@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from capstone_back_end import views
+from portfolio_back import views
 
 router = routers.DefaultRouter()
 router.register(r'projects', views.ProjectViewSet)
