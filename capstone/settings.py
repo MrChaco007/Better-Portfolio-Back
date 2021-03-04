@@ -25,7 +25,8 @@ SECRET_KEY = 'lr@7k--c^@-_11sdplr)gr*q%o)k0=l_d%&v5ijthq^6ux*q^!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
@@ -38,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'portfolio_back.apps.PortfolioBackConfig'
+    'portfolio_back.apps.PortfolioBackConfig',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -49,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'capstone.urls'
